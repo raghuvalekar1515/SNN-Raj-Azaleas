@@ -29,9 +29,9 @@ Telegram and the shared Google Sheet.
 >
 > **THE NAME AND DOMAIN.** Raj Azaleas is SNN Raj Corp's own name for the development,
 > so the site is SNN Raj Azaleas (developer + project name, as the checklist asks).
-> `snnrajazaleas.com` is another channel partner's live site; `snnrajazaleas.info`
-> (and `.net`) were free on 17 October 2026. The domain is in every canonical URL, the
-> sitemap, the schema and the llms files: if you choose another, rebuild.
+> The site is live at `snnkudlu.com`, a custom domain on the `snn-raj-azaleas`
+> Worker. The domain is in every canonical URL, the sitemap, the schema and the llms
+> files: if it ever changes, rebuild.
 >
 > **You already run a microsite for this project: `snnkudlugate.com` (SNN Kudlu
 > Gate)**, built from an earlier brief (30.66 acres, 2,075+ homes in 7 towers). This
@@ -158,13 +158,11 @@ Every push then redeploys. Confirm the site serves before going further.
 **and** `www`. You add no A or CNAME record yourself: Workers custom domains
 require the zone on Cloudflare and Cloudflare writes the record.
 
-`snnrajazaleas.info` is a proposal: it was unregistered on 17 October 2026. Register
-it (or your choice, then rebuild) and add the zone to Cloudflare first - every
-page's canonical points at it.
+`snnkudlu.com` is connected this way, and every page's canonical points at it.
 
 ### 4. Email
 
-1. **Email Service → Email Routing** → enable for `snnrajazaleas.info`.
+1. **Email Service → Email Routing** → enable for `snnkudlu.com`.
    Cloudflare adds MX, SPF and DKIM itself.
 2. **Destination Addresses** → add the recipient → **click the verification
    link**. Mail will not send until this is done.
@@ -211,7 +209,7 @@ secret. The `LEAD_SHEET` service binding in `wrangler.jsonc` calls the
 account, which holds them and writes the row. `/api/lead/status` reports
 `"sheet":{"configured":true}` once deployed.
 
-The row's Page URL column is the full URL (`https://snnrajazaleas.info/price`),
+The row's Page URL column is the full URL (`https://snnkudlu.com/price`),
 which is how the shared sheet tells this site from the others. Every row also
 names the project, the same whatever page or form the lead came from: Project
 Name `SNN Raj Azaleas`, City `Bangalore`, Project Zone `East Bangalore`, Project
@@ -238,7 +236,7 @@ After a deploy, through the edge cache - `cf-cache-status: HIT` will otherwise
 serve a stale page and make a correct change look broken:
 
 ```sh
-D=https://snnrajazaleas.info
+D=https://snnkudlu.com
 C=$(date +%s)
 
 curl -s "$D/?cb=$C" | md5sum; md5sum site/index.html   # deployed matches local
@@ -310,7 +308,7 @@ re-exporting from Webflow, re-add its `<script>` line along with
 `CLAUDE.md` is the standing microsite checklist this site was built and checked
 against. What is left once the domain is connected (its phases 6 to 8):
 
-1. Redirect `www.snnrajazaleas.info` to `snnrajazaleas.info` (a Cloudflare Redirect Rule).
+1. Redirect `www.snnkudlu.com` to `snnkudlu.com` (a Cloudflare Redirect Rule).
 2. Telegram: `TELEGRAM_BOT_TOKEN` (@PropNewzMSbot) as a Worker secret (below); leads go to the
    zone group and both All Bangalore groups. Confirm with `/api/lead/status?check=telegram`.
 3. Email Routing: verify the `LEAD_EMAIL_TO` destination address.

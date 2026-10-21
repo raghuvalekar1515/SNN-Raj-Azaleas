@@ -111,20 +111,20 @@ Map: https://www.google.com/maps/search/?api=1&query=12.8886%2C77.6633
 
 ## Pages
 
-- [Home](https://snnrajazaleas.info/): summary, key figures and the register-interest form
-- [Overview](https://snnrajazaleas.info/overview): the project highlights, landscape, water and access
-- [Floor Plans](https://snnrajazaleas.info/floor-plan): 2, 3 and 4.5 BHK configurations, with indicative layouts
-- [Master Plan](https://snnrajazaleas.info/master-plan): the plan of six towers around a central landscape by the lake
-- [Amenities](https://snnrajazaleas.info/amenities): 60+ amenities, from the treetop trail and wild-watching deck to the sports lawns
-- [Location](https://snnrajazaleas.info/location): off Hosa Road between Haralur Road and Kudlu Gate, and what is near it
-- [Price](https://snnrajazaleas.info/price): configurations and homes planned, with prices at launch
-- [Gallery](https://snnrajazaleas.info/gallery): pictures of the towers, arrival, clubhouse, gardens and amenities
-- [FAQs](https://snnrajazaleas.info/faqs): location, configurations, price, other names, amenities and the developer
-- [Contact](https://snnrajazaleas.info/contact-us): register your interest
+- [Home](https://snnkudlu.com/): summary, key figures and the register-interest form
+- [Overview](https://snnkudlu.com/overview): the project highlights, landscape, water and access
+- [Floor Plans](https://snnkudlu.com/floor-plan): 2, 3 and 4.5 BHK configurations, with indicative layouts
+- [Master Plan](https://snnkudlu.com/master-plan): the plan of six towers around a central landscape by the lake
+- [Amenities](https://snnkudlu.com/amenities): 60+ amenities, from the treetop trail and wild-watching deck to the sports lawns
+- [Location](https://snnkudlu.com/location): off Hosa Road between Haralur Road and Kudlu Gate, and what is near it
+- [Price](https://snnkudlu.com/price): configurations and homes planned, with prices at launch
+- [Gallery](https://snnkudlu.com/gallery): pictures of the towers, arrival, clubhouse, gardens and amenities
+- [FAQs](https://snnkudlu.com/faqs): location, configurations, price, other names, amenities and the developer
+- [Contact](https://snnkudlu.com/contact-us): register your interest
 
 ## Contact
 
-Enquiries go through the form at https://snnrajazaleas.info/contact-us. No public telephone number
+Enquiries go through the form at https://snnkudlu.com/contact-us. No public telephone number
 is published on this website.
 
 ## Questions buyers ask
