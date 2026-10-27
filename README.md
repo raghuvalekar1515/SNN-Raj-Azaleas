@@ -1,6 +1,6 @@
-# SNN Raj Azaleas
+# SNN Kudlu
 
-Static website for SNN Raj Azaleas, the pre-launch Raj Azaleas community by SNN Raj Corp, off
+Static website for SNN Kudlu, a pre-launch community by SNN Raj Corp, off
 Hosa Road between Haralur Road and Kudlu Gate, South-East Bengaluru. Built on the Ira Moonglade Webflow
 template, served from Cloudflare Workers, with lead capture to KV plus email,
 Telegram and the shared Google Sheet.
@@ -22,21 +22,24 @@ Telegram and the shared Google Sheet.
 > **The pictures**: the project's presentation imagery (the towers across the lake,
 > arrival court, clubhouse, central landscape, rain garden, tower garden, aerial
 > master plan and the 3D layouts of the four home types, captioned as indicative), and
-> on the gallery page four of SNN Raj Corp's own Raj Azaleas amenity pictures (treetop
-> trail, wild-watching deck, cricket lawn, multi-functional lawn), cropped so the
-> small date stamp two of them carry falls outside. Replace them with SNN's own
+> on the gallery page four amenity pictures from SNN Raj Azaleas, a different SNN Raj
+> Corp apartment project (treetop trail, wild-watching deck, cricket lawn,
+> multi-functional lawn), cropped so the small date stamp two of them carry falls
+> outside. Replace them with SNN's own
 > plans when they are released.
 >
-> **THE NAME AND DOMAIN.** Raj Azaleas is SNN Raj Corp's own name for the development,
-> so the site is SNN Raj Azaleas (developer + project name, as the checklist asks).
-> The site is live at `snnkudlu.com`, a custom domain on the `snn-raj-azaleas`
-> Worker. The domain is in every canonical URL, the sitemap, the schema and the llms
-> files: if it ever changes, rebuild.
+> **THE NAME AND DOMAIN.** The project is **SNN Kudlu**. SNN Raj Azaleas is a
+> different SNN Raj Corp project, so that name appears nowhere under `site/` (only
+> the Worker, the KV namespace and the repository keep it: renaming the Worker would
+> detach the custom domain and its secrets). The site is live at `snnkudlu.com`, a
+> custom domain on the `snn-raj-azaleas` Worker. The domain is in every canonical
+> URL, the sitemap, the schema, the llms files and the share image (`og-image.jpg`):
+> if it ever changes, rebuild.
 >
 > **You already run a microsite for this project: `snnkudlugate.com` (SNN Kudlu
 > Gate)**, built from an earlier brief (30.66 acres, 2,075+ homes in 7 towers). This
-> site carries the later plan (about 28.7 acres, 1,917 homes in 6 towers) under the
-> developer's own name, and links SNN Kudlu Gate in its network list.
+> site carries the later plan (about 28.7 acres, 1,917 homes in 6 towers) and links SNN
+> Kudlu Gate in its network list.
 
 The layout is the Webflow export's. Its copy, pictures, logo and palette are this
 project's, generated from one facts file; the classes, Webflow ids,
@@ -93,7 +96,7 @@ Each contact form carries two hidden fields as its first children:
 
 ```html
 <input type="hidden" name="lead_source" value="BP MS Lead">
-<input type="hidden" name="Project Name" value="SNN Raj Azaleas">
+<input type="hidden" name="Project Name" value="SNN Kudlu">
 ```
 
 `form-handler.js` sends the second as the lead's project (the Worker prints it as a
@@ -212,7 +215,7 @@ account, which holds them and writes the row. `/api/lead/status` reports
 The row's Page URL column is the full URL (`https://snnkudlu.com/price`),
 which is how the shared sheet tells this site from the others. Every row also
 names the project, the same whatever page or form the lead came from: Project
-Name `SNN Raj Azaleas`, City `Bangalore`, Project Zone `East Bangalore`, Project
+Name `SNN Kudlu`, City `Bangalore`, Project Zone `East Bangalore`, Project
 Status `Pre Launch`, Project Type `2, 3 & 4.5 BHK Apartments` and Project Location
 `Haralur Road, near Kudlu Gate` (`SHEET_PROJECT` in `worker/index.js`). Lead City is the visitor's
 city, as Cloudflare places them from their IP address: a guide, not an
@@ -353,7 +356,7 @@ contrast-measured before use.
 
 The Webflow export was built dark, so the palette is repointed at its
 source rather than rule by rule: the light-theme block at the end of
-`site/css/snn-raj-azaleas.webflow.css` redefines the export's own custom
+`site/css/snn-kudlu.webflow.css` redefines the export's own custom
 properties, then overrides only the rules that hard-code a dark
 background. Change `--riv-accent` there and every button, label, link,
 table stripe and the lettermark follow. The generated tokens still read

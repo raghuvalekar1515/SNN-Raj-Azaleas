@@ -41,7 +41,7 @@
   var ENDPOINT = '/api/lead';
 
   /* Recorded with every lead so one inbox can serve several projects. */
-  var PROJECT = "SNN Raj Azaleas";
+  var PROJECT = "SNN Kudlu";
 
   /* The project's zone, as the shared lead sheet's Project Zone column
    * names it. */

@@ -35,7 +35,7 @@
   'use strict';
 
   var ENDPOINT = '/api/lead';
-  var PROJECT = "SNN Raj Azaleas";
+  var PROJECT = "SNN Kudlu";
   var ZONE = "East Bangalore";
   var LEAD_SOURCE = "BP MS Lead";
   var MESSAGE = 'Asked for a call back through the website pop-up.';

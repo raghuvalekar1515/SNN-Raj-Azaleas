@@ -59,7 +59,7 @@ const valid = {
   email: 'asha@example.com',
   phone: '+91 98765 43210',
   message: 'Please share the 3BHK price list.',
-  project: 'SNN Raj Azaleas',
+  project: 'SNN Kudlu',
   page: '/price'
 };
 
@@ -77,7 +77,7 @@ console.log('--- happy path ---');
   const rec = JSON.parse(store.get(keys[0]));
   check('phone normalised to 10 digits', rec.phone === '9876543210', rec.phone);
   check('every field stored', rec.name === 'Asha Rao' && rec.email === 'asha@example.com'
-    && rec.message.startsWith('Please share') && rec.project === 'SNN Raj Azaleas' && rec.page === '/price');
+    && rec.message.startsWith('Please share') && rec.project === 'SNN Kudlu' && rec.page === '/price');
   check('IP not stored alongside the enquirer', !JSON.stringify(rec).includes('1.2.3.4'));
 }
 
@@ -161,7 +161,7 @@ console.log('\n--- notification ---');
   const text = outbound[0]?.body?.text || '';
   check('plain text, no parse_mode', !('parse_mode' in (outbound[0]?.body || {})));
   check('message carries the lead', text.includes('Asha Rao') && text.includes('9876543210')
-    && text.includes('asha@example.com') && text.includes('SNN Raj Azaleas'));
+    && text.includes('asha@example.com') && text.includes('SNN Kudlu'));
 
   store.clear(); seen.clear(); outbound = [];
   const sent = [];

@@ -1,5 +1,5 @@
 /**
- * Lead capture for the SNN Raj Azaleas microsite.
+ * Lead capture for the SNN Kudlu microsite.
  *
  * The site is otherwise pure static assets - a Webflow export, served
  * untouched. This Worker exists only to catch POST /api/lead and durably
@@ -460,7 +460,7 @@ function countryName(code) {
  * visitor's goes in Lead City. From the site's own description of the project.
  */
 const SHEET_PROJECT = {
-  name: "SNN Raj Azaleas",
+  name: "SNN Kudlu",
   city: "Bangalore",
   /* One of the shared sheet's zone tabs (North, South, East, Central & West
      Bangalore) and a key of TELEGRAM_ZONE_CHATS, so the row is copied to the
