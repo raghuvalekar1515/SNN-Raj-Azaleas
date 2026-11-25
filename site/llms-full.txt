@@ -119,6 +119,8 @@ Map: https://www.google.com/maps/search/?api=1&query=12.8886%2C77.6633
 - [Location](https://snnkudlu.com/location): off Hosa Road between Haralur Road and Kudlu Gate, and what is near it
 - [Price](https://snnkudlu.com/price): configurations and homes planned, with prices at launch
 - [Gallery](https://snnkudlu.com/gallery): pictures of the towers, arrival, clubhouse, gardens and amenities
+- [About SNN Raj Corp](https://snnkudlu.com/about-builder): SNN Raj Corp (formerly SNN Builders), the developer of SNN Kudlu: its history, founders, office and projects
+- [SNN Kudlu vs Keya The Urban Forest](https://snnkudlu.com/vs-keya-the-urban-forest): the two communities side by side, with who each one suits
 - [FAQs](https://snnkudlu.com/faqs): location, configurations, price, other names, amenities and the developer
 - [Contact](https://snnkudlu.com/contact-us): register your interest
 
